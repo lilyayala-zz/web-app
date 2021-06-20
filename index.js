@@ -38,7 +38,6 @@ app.use(
   })
 );
 
-// 👉 Replace this with auth middleware 👈
 app.use(
    auth({
       secret: SESSION_SECRET,
@@ -47,7 +46,6 @@ app.use(
       baseURL: APP_URL,
    })
 );
-
 
 app.get("/", async (req, res, next) => {
  try {
